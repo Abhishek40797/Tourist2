@@ -22,9 +22,52 @@ export const GlobalStyle = createGlobalStyle`
     .justify-between {
         justify-content : space-between;
     }
+    .flex-direction {
+        flex-direction : row;
+    }
+    @media (max-width : 630px) {
+        .about-section {
+            flex-direction : column;
+        }
+        .about-image {
+            width : 500px !important;
+        }
+    }
+    @media (max-width : 550px) {
+        .about-section {
+            flex-direction : column;
+        }
+        .about-image {
+            width : 100% !important;
+        }
+    }
+    @media (max-width : 700px) {
+        .flex-direction {
+            flex-direction : column;
+        }
+        .hero-buttons {
+            justify-content : center;
+        }
+        .big-image {
+            width : 500px !important;
+        }
+    }
+    @media (max-width : 550px) {
+        .big-image {
+            width : 100% !important;
+        }
+    }
+    @media (max-width : 630px) {
+        .footer-section {
+            flex-direction: column;
+            gap: 40px;
+            text-align: center;
+            align-items: center;
+        }
+    }
 `
 
-export const BodyColor = createGlobalStyle`
+export const HeroBody = styled.body`
     background-color: #eeeeee;
 `;
 
@@ -32,6 +75,17 @@ export const FooterSection = styled.footer`
     background-color : #00BFFF;
     padding-block: 50px;
     margin-top : 80px;
+    @media (max-width : 1050px) {
+        .flex {
+            gap : 10px;
+        }
+    }
+    
+    @media (max-width : 950px) {
+        .logo-section {
+            display : none
+        }
+    }
 `;
 
 export const FooterContents = styled.div`
@@ -61,6 +115,16 @@ export const FooterContents = styled.div`
         margin-top: -10px;
         i {
             padding-right: 10px;
+        }
+    }
+    @media (max-width : 630px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-items: stretch;
+        align-self: center;
+        h5 {
+            font-size : 25px;
         }
     }
 `

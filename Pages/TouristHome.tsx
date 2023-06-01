@@ -1,4 +1,7 @@
+import { HeroBody } from '../StyledComponents/GlobalStyle';
 import { ExporeCards } from './Cards.tsx/ExporeCards';
+import { Footer } from './Footer';
+import { Header } from './Header';
 import { About } from './HomePages/Aboutus';
 import { ClientFeeback } from './HomePages/ClientFeedback';
 import { Expore } from './HomePages/Expore';
@@ -10,14 +13,18 @@ import { Services } from './Services';
 const Home = ()=>{
     return (
         <>
-            <Hero />
-            <FlightInfo />
-            <Expore />
-            <ExporeCards />
-            <Services />
-            <Reservations />
-            <About />
-            <ClientFeeback />
+            <HeroBody>
+                <Header />
+                {/* <Hero />
+                <FlightInfo />
+                <Expore />
+                <ExporeCards />
+                <Services />
+                <Reservations />
+                <About />
+                <ClientFeeback />
+                <Footer /> */}
+            </HeroBody>
         </>
     )
 }

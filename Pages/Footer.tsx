@@ -7,9 +7,9 @@ export const Footer = ()=>{
     return (
         <>
             <FooterSection>
-                <Wrapper className="flex justify-between">
+                <Wrapper className="flex justify-between footer-section">
 
-                    <FooterContents className="flex">
+                    <FooterContents className="flex logo-section">
                         <Logo width="40%" src="assets/asset 1.png" alt="" />
                         <Para>Copyright @LOVE To Fly 2023 All Rights Reserved</Para>
                     </FooterContents>
